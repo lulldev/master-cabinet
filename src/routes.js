@@ -4,7 +4,6 @@ import FormPage from './pages/FormPage';
 import DynamicRoutePage from './pages/DynamicRoutePage';
 import NotFoundPage from './pages/NotFoundPage';
 import PanelLeftPage from './pages/PanelLeftPage';
-import PanelRightPage from './pages/PanelRightPage';
 
 export default [
   {
@@ -14,10 +13,6 @@ export default [
   {
     path: '/panel-left/',
     component: PanelLeftPage,
-  },
-  {
-    path: '/panel-right/',
-    component: PanelRightPage,
   },
   {
     path: '/about/',

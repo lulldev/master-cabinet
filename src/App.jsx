@@ -12,7 +12,7 @@ export default function (props) {
 
   // Framework7 parameters here
   const f7params = {
-    id: 'io.framework7.testapp', // App bundle ID
+    id: 'est5.master_cabinet', // App bundle ID
     name: 'Master-cabinet', // App name
     theme: 'auto', // Automatic theme detection
     // App routes
