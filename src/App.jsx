@@ -26,12 +26,7 @@ export default function (props) {
 
       {/* Left Panel */}
       <Panel left cover themeDark>
-        <View url="/panel-left/" />
-      </Panel>
-
-      {/* Right Panel */}
-      <Panel right reveal themeDark>
-        <View url="/panel-right/"/>
+        <View url="/left-menu/" />
       </Panel>
 
       {/* Main View */}

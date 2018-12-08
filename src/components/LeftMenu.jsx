@@ -15,6 +15,7 @@ export default () => (
       <ListItem title="История посещений" />
       <ListItem title="Настройка оповещений" />
       <ListItem title="Комментарии о клиентах" />
+      <ListItem title="Выход" />
     </List>
   </Page>
 );

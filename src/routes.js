@@ -3,7 +3,7 @@ import AboutPage from './pages/AboutPage';
 import FormPage from './pages/FormPage';
 import DynamicRoutePage from './pages/DynamicRoutePage';
 import NotFoundPage from './pages/NotFoundPage';
-import PanelLeftPage from './pages/PanelLeftPage';
+import LeftMenu from './components/LeftMenu';
 
 export default [
   {
@@ -11,8 +11,8 @@ export default [
     component: HomePage,
   },
   {
-    path: '/panel-left/',
-    component: PanelLeftPage,
+    path: '/left-menu/',
+    component: LeftMenu,
   },
   {
     path: '/about/',
