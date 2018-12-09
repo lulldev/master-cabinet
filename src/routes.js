@@ -5,6 +5,7 @@ import DynamicRoutePage from './pages/DynamicRoutePage';
 import NotFoundPage from './pages/NotFoundPage';
 import LoginPage from './pages/LoginPage';
 import HistoryVisits from './pages/HistoryVisits';
+import Visit from './pages/Visit';
 
 import LeftMenu from './components/LeftMenu';
 
@@ -20,7 +21,11 @@ export default [
   {
     path: '/history-visits/',
     component: HistoryVisits,
-  },  
+  },
+  {
+    path: '/visit/',
+    component: Visit,
+  }, 
   {
     path: '/about/',
     component: AboutPage,

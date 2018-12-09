@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-    Page,
-    Navbar,
-    List,
-    ListItem,
-    Subnavbar,
-    Searchbar,
-    Link,
-    NavLeft,
-    NavTitle,
+  Page,
+  Navbar,
+  List,
+  ListItem,
+  Subnavbar,
+  Searchbar,
+  Link,
+  NavLeft,
+  NavTitle,
 } from 'framework7-react';
 
 export default class HistoryVisits extends React.Component {
@@ -19,7 +19,7 @@ export default class HistoryVisits extends React.Component {
           <NavLeft>
             <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left"></Link>
           </NavLeft>
-          <NavTitle>Личный кабинет</NavTitle>
+          <NavTitle>История посещений</NavTitle>
           <Subnavbar inner={false}>
             <Searchbar
               searchContainer=".search-list"
@@ -28,11 +28,11 @@ export default class HistoryVisits extends React.Component {
           </Subnavbar>
         </Navbar>
         <List className="searchbar-not-found">
-          <ListItem title="Nothing found" />
+          <ListItem title="Клиент не найден" />
         </List>
         <List mediaList className="search-list searchbar-found">
         <ListItem
-          link="#"
+          link="/visit/"
           title="Рожкова Светлана Викторовна"
           subtitle="Мастер: Поляк Мария"
           text="05/12/2018, 13:45"
