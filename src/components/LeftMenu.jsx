@@ -22,7 +22,7 @@ export default () => (
       <ListItem title="Моя выручка за день" view="#main-view" panelClose />
       <ListItem link="/history-visits/" title="История посещений" view="#main-view" panelClose />
       <ListItem link="/notify-settings/" title="Настройка оповещений" view="#main-view" panelClose />
-      <ListItem title="Комментарии о клиентах" view="#main-view" panelClose />
+      <ListItem link="/client-comments/" title="Комментарии о клиентах" view="#main-view" panelClose />
       <ListItem link="/login/" title="Выход" view="#main-view" panelClose />
     </List>
   </Page>

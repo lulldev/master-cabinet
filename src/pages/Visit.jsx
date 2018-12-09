@@ -5,7 +5,6 @@ import {
   BlockTitle,
   List,
   ListItem,
-  Block,
   Icon,
 } from 'framework7-react';
 

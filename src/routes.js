@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage';
 import HistoryVisits from './pages/HistoryVisits';
 import Visit from './pages/Visit';
 import NotifySettings from './pages/NotifySettings';
+import ClientComments from './pages/ClientComments';
 
 import LeftMenu from './components/LeftMenu';
 
@@ -31,6 +32,10 @@ export default [
     path: '/notify-settings/',
     component: NotifySettings,
   },
+  {
+    path: '/client-comments/',
+    component: ClientComments,
+  },  
   {
     path: '/about/',
     component: AboutPage,
