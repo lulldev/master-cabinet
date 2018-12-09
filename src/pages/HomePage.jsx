@@ -22,8 +22,8 @@ export default class HomePage extends React.Component {
         </Navbar>
         <BlockTitle>Управление</BlockTitle>
         <List>
-          <ListItem link="/" title="Начать прием клиента" />
-          <ListItem link="/" title="Моя выручка за день" />
+          <ListItem link="/clients/" title="Начать прием клиента" />
+          <ListItem link="/proceeds/" title="Моя выручка за день" />
           <ListItem link="/history-visits/" title="История посещений" />
           <ListItem link="/notify-settings/" title="Настройка оповещений" />
           <ListItem link="/client-comments/" title="Комментарии о клиентах" />
