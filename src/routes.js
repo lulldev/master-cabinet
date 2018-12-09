@@ -6,6 +6,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import LoginPage from './pages/LoginPage';
 import HistoryVisits from './pages/HistoryVisits';
 import Visit from './pages/Visit';
+import NotifySettings from './pages/NotifySettings';
 
 import LeftMenu from './components/LeftMenu';
 
@@ -25,7 +26,11 @@ export default [
   {
     path: '/visit/',
     component: Visit,
-  }, 
+  },
+  {
+    path: '/notify-settings/',
+    component: NotifySettings,
+  },
   {
     path: '/about/',
     component: AboutPage,
