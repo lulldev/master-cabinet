@@ -4,6 +4,7 @@ import FormPage from './pages/FormPage';
 import DynamicRoutePage from './pages/DynamicRoutePage';
 import NotFoundPage from './pages/NotFoundPage';
 import LoginPage from './pages/LoginPage';
+import HistoryVisits from './pages/HistoryVisits';
 
 import LeftMenu from './components/LeftMenu';
 
@@ -16,6 +17,10 @@ export default [
     path: '/left-menu/',
     component: LeftMenu,
   },
+  {
+    path: '/history-visits/',
+    component: HistoryVisits,
+  },  
   {
     path: '/about/',
     component: AboutPage,

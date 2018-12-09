@@ -7,7 +7,6 @@ import {
     ListItem,
     Label,
     Input,
-    Row,
     Block,
     Button,
 } from 'framework7-react';

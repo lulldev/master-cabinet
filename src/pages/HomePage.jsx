@@ -24,7 +24,7 @@ export default class HomePage extends React.Component {
         <List>
           <ListItem link="/" title="Начать прием клиента" />
           <ListItem link="/" title="Моя выручка за день" />
-          <ListItem link="/" title="История посещений" />
+          <ListItem link="/history-visits/" title="История посещений" />
           <ListItem link="/" title="Настройка оповещений" />
           <ListItem link="/" title="Комментарии о клиентах" />
         </List>
