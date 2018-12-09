@@ -3,6 +3,8 @@ import AboutPage from './pages/AboutPage';
 import FormPage from './pages/FormPage';
 import DynamicRoutePage from './pages/DynamicRoutePage';
 import NotFoundPage from './pages/NotFoundPage';
+import LoginPage from './pages/LoginPage';
+
 import LeftMenu from './components/LeftMenu';
 
 export default [
@@ -17,6 +19,10 @@ export default [
   {
     path: '/about/',
     component: AboutPage,
+  },
+  {
+    path: '/login/',
+    component: LoginPage,
   },
   {
     path: '/form/',
