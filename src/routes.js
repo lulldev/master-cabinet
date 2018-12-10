@@ -6,6 +6,7 @@ import Visit from './pages/Visit';
 import NotifySettings from './pages/NotifySettings';
 import ClientComments from './pages/ClientComments';
 import Clients from './pages/Clients';
+import ClientOrder from './pages/ClientOrder';
 import Proceeds from './pages/Proceeds';
 
 import LeftMenu from './components/LeftMenu';
@@ -23,6 +24,10 @@ export default [
     path: '/clients/',
     component: Clients,
   },
+  {
+    path: '/order/',
+    component: ClientOrder,
+  },  
   {
     path: '/proceeds/',
     component: Proceeds,

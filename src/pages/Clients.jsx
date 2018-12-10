@@ -6,7 +6,9 @@ import {
   NavLeft,
   NavTitle,
   BlockTitle,
-  Block,
+  // Block,
+  List,
+  ListItem,
 } from 'framework7-react';
 
 export default class Clients extends React.Component {
@@ -20,9 +22,23 @@ export default class Clients extends React.Component {
           <NavTitle>Клиенты</NavTitle>
         </Navbar>
         <BlockTitle>Прием клиентов на 09.12.2018</BlockTitle>
-        <Block strong>
+        <List mediaList className="search-list searchbar-found">
+          <ListItem
+            link="/order/"
+            title="Рожкова Светлана Викторовна"
+            subtitle="16:00 - 01. Укладка феном (короткие волосы)"
+            text="750 руб. Длительность не указана"
+          />
+          <ListItem
+            link="/order/"
+            title="Рожкова Светлана Викторовна"
+            subtitle="16:00 - 01. Укладка феном (короткие волосы)"
+            text="750 руб. Длительность не указана"
+          />          
+        </List>
+        {/* <Block strong>
           <p>На данный момент нет клиентов</p>
-        </Block>        
+        </Block>         */}
       </Page>
     );
   }

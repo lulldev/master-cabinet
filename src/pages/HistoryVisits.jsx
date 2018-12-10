@@ -31,12 +31,12 @@ export default class HistoryVisits extends React.Component {
           <ListItem title="Клиент не найден" />
         </List>
         <List mediaList className="search-list searchbar-found">
-        <ListItem
-          link="/visit/"
-          title="Рожкова Светлана Викторовна"
-          subtitle="Мастер: Поляк Мария"
-          text="05/12/2018, 13:45"
-        ></ListItem>
+          <ListItem
+            link="/visit/"
+            title="Рожкова Светлана Викторовна"
+            subtitle="Мастер: Поляк Мария"
+            text="05/12/2018, 13:45"
+          />
         </List>
       </Page>
     );
