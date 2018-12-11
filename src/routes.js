@@ -7,6 +7,7 @@ import NotifySettings from './pages/NotifySettings';
 import ClientComments from './pages/ClientComments';
 import Clients from './pages/Clients';
 import ClientOrder from './pages/ClientOrder';
+import ClientOrderReview from './pages/ClientOrderReview';
 import Proceeds from './pages/Proceeds';
 
 import LeftMenu from './components/LeftMenu';
@@ -27,7 +28,11 @@ export default [
   {
     path: '/order/',
     component: ClientOrder,
-  },  
+  },
+  {
+    path: '/review/',
+    component: ClientOrderReview,
+  },
   {
     path: '/proceeds/',
     component: Proceeds,

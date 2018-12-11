@@ -124,7 +124,7 @@ export default class Clients extends React.Component {
           </ListItem>     
         </List>
         <Block>
-          <Button className="col" fill>Завершить</Button>
+          <Link href="/review/">Подтвердить</Link>
         </Block>
       </Page>
     );
