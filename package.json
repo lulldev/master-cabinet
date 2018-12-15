@@ -1,6 +1,6 @@
 {
   "name": "master-cabinet",
-  "version": "3.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "framework7": "^3.6.0",
@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "cd express-mock-api && npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
