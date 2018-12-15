@@ -5,7 +5,7 @@ import {
   View,
   Statusbar,
 } from 'framework7-react';
-
+import { AuthProvider } from 'react-check-auth';
 import routes from './routes';
 
 export default function (props) {
@@ -20,17 +20,19 @@ export default function (props) {
   };
 
   return (
-    <App params={f7params}>
-      {/* Statusbar */}
-      <Statusbar />
+    <AuthProvider authUrl={'http://localhost:8080/auth'}>
+      <App params={f7params}>
+        {/* Statusbar */}
+        <Statusbar />
 
-      {/* Left Panel */}
-      <Panel left cover themeDark>
-        <View url="/left-menu/" />
-      </Panel>
+        {/* Left Panel */}
+        <Panel left cover themeDark>
+          <View url="/left-menu/" />
+        </Panel>
 
-      {/* Main View */}
-      <View id="main-view" url="/" main className="ios-edges"/>
-    </App>
+        {/* Main View */}
+        <View id="main-view" url="/" main className="ios-edges"/>
+      </App>
+    </AuthProvider>
   );
 };
