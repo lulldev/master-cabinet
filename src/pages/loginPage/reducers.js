@@ -2,7 +2,7 @@ export const initialState = {
   todos: [],
 }
 
-export const login = (state, payload) => ({
+export const signIn = (state, payload) => ({
   ...state,
   todos: [
     ...state.todos,

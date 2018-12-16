@@ -1,5 +1,5 @@
 import React from 'react';
-import actions from './actions'
+import actions from './actions';
 import { connect } from 'redaction';
 import {
   Page,
@@ -15,6 +15,7 @@ import {
 
 class LoginPage extends React.Component {
   render() {
+    console.log(actions.login);
     return (
       <Page>
         <Navbar>
@@ -34,7 +35,7 @@ class LoginPage extends React.Component {
           <Button
             className="col"
             fill
-            onClick={() => actions.login.login('test', 'test')}
+            onClick={() => actions.login.signIn('test', 'test')}
           >Вход</Button>
         </Block>
       </Page>

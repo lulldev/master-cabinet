@@ -1,7 +1,7 @@
 import { createStore, combineReducers } from 'redaction';
-import reducers from './reducers';
+import reducers from '../reducers';
 
-const initialState = {}
+const initialState = {};
 
 const store = createStore({
   reducers: {
@@ -10,5 +10,4 @@ const store = createStore({
   initialState,
 })
 
-
-export default store
+export default store;

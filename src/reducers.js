@@ -1,6 +1,5 @@
-import { wrapReducers } from 'redaction';
-import { login } from './pages/loginPage/reducers';
+import * as login from './pages/loginPage/reducers';
 
-export default wrapReducers({
+export default {
   login,
-});
+}

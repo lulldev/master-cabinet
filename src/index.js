@@ -1,7 +1,7 @@
 // Import React and ReactDOM
 import React from 'react';
 import ReactDOM from 'react-dom';
-import store from './store';
+import store from './core/store';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 
