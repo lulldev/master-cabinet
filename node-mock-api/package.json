@@ -1,0 +1,22 @@
+{
+  "name": "node-mock-api",
+  "description": "Quick mocks with node and cors",
+  "version": "0.1.0",
+  "repository": "lulldev/node-mock-api",
+  "author": "Kalagin Ivan",
+  "keywords": [
+    "express",
+    "mock",
+    "api",
+    "rest",
+    "node",
+    "cors"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
