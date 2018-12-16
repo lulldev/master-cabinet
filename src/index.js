@@ -1,6 +1,9 @@
 // Import React and ReactDOM
 import React from 'react';
 import ReactDOM from 'react-dom';
+import store from './store';
+import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
 
 // Import Framework7
 import Framework7 from 'framework7/framework7.esm.bundle';
@@ -24,7 +27,18 @@ import './css/app.css';
 Framework7.use(Framework7React);
 
 // Mount React App
+// ReactDOM.render(
+//   React.createElement(App),
+//   document.getElementById('app'),
+// );
+
 ReactDOM.render(
-  React.createElement(App),
+  (
+    <Provider store={store}>
+      <App />
+    </Provider>
+  ),
   document.getElementById('app'),
 );
+
+serviceWorker.unregister();
