@@ -25,6 +25,7 @@
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "cpy-cli": "^2.0.0",
+    "cross-fetch": "^3.0.0",
     "react-check-auth": "^0.2.0-alpha.2",
     "react-redux": "^6.0.0"
   },
