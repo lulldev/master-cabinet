@@ -22,11 +22,14 @@ app.use((req, res, next) => {
 
 function mockFile(filename) {
   return (request, response) => {
+    console.log(`${new Date()}`);
+    console.log(`Request to: ${request.originalUrl}`);
     fs.createReadStream(filename).pipe(response);
   };
 }
 
-app.get('/auth', mockFile('mocks/Auth.json'));
+app.post('/auth', mockFile('mocks/Auth.json'));
+app.get('/getAuth', mockFile('mocks/GetAuth.json'));
 
 app.listen(80, function () {
   console.log('Mock web server listening on port 80');

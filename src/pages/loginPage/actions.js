@@ -8,7 +8,11 @@ export const errorSignIn = reducers.login.errorSignIn;
 
 export function signIn(login, password) {
   requestSignIn();
-  return fetch(`http://localhost/auth`)
+  return fetch(`http://localhost/auth`,
+    {
+      method: 'POST',
+      body: JSON.stringify({ login, password }),
+    })
     .then(
       (response) => {
         if (response.status !== 200) {

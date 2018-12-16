@@ -20,7 +20,7 @@ export default function (props) {
   };
 
   return (
-    <AuthProvider authUrl={'http://localhost/auth'}>
+    <AuthProvider authUrl={'http://localhost/getAuth'}>
       <App params={f7params}>
         {/* Statusbar */}
         <Statusbar />
