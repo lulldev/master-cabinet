@@ -9,7 +9,7 @@ import {
     List,
     ListItem,
 } from 'framework7-react';
-
+import MasterProfile from '../components/MasterProfile';
 export default class HomePage extends React.Component {
   render() {
     return (
@@ -20,6 +20,7 @@ export default class HomePage extends React.Component {
           </NavLeft>
           <NavTitle>Личный кабинет</NavTitle>
         </Navbar>
+        <MasterProfile />
         <BlockTitle>Управление</BlockTitle>
         <List>
           <ListItem link="/clients/" title="Начать прием клиента" />

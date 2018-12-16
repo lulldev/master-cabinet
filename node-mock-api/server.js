@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-const router = require('express').Router();
 
 app.use((req, res, next) => {
   // Website you wish to allow to connect
