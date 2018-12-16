@@ -1,6 +1,6 @@
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
-import LoginPage from './pages/LoginPage';
+import LoginPage from './pages/loginPage/LoginPage';
 import HistoryVisits from './pages/HistoryVisits';
 import Visit from './pages/Visit';
 import NotifySettings from './pages/NotifySettings';

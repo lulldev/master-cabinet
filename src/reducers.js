@@ -1,7 +1,6 @@
-import { combineReducers } from 'redux';
-// import { steps } from './components/steps/reducers';
+import { wrapReducers } from 'redaction';
+import { login } from './pages/loginPage/reducers';
 
-
-export default combineReducers({
-  // steps,
+export default wrapReducers({
+  login,
 });

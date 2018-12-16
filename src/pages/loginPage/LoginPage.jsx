@@ -1,17 +1,19 @@
 import React from 'react';
+import actions from './actions'
+import { connect } from 'redaction';
 import {
-    Page,
-    Navbar,
-    NavTitle,
-    List,
-    ListItem,
-    Label,
-    Input,
-    Block,
-    Button,
+  Page,
+  Navbar,
+  NavTitle,
+  List,
+  ListItem,
+  Label,
+  Input,
+  Block,
+  Button,
 } from 'framework7-react';
 
-export default class LoginPage extends React.Component {
+class LoginPage extends React.Component {
   render() {
     return (
       <Page>
@@ -29,9 +31,17 @@ export default class LoginPage extends React.Component {
           </ListItem>
         </List>
         <Block>
-          <Button className="col" fill>Вход</Button>
+          <Button
+            className="col"
+            fill
+            onClick={() => actions.login.login('test', 'test')}
+          >Вход</Button>
         </Block>
       </Page>
     );
   }
 }
+
+export default connect({
+  login: 'login'
+})(LoginPage)
