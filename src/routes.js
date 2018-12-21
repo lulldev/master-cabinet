@@ -1,6 +1,6 @@
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
-import LoginPage from './pages/loginPage/LoginPage';
+// import LoginPage from './pages/loginPage/LoginPage';
 import HistoryVisits from './pages/HistoryVisits';
 import Visit from './pages/Visit';
 import NotifySettings from './pages/NotifySettings';
@@ -53,10 +53,10 @@ export default [
     path: '/client-comments/',
     component: ClientComments,
   },
-  {
-    path: '/login/',
-    component: LoginPage,
-  },
+  // {
+  //   path: '/login/',
+  //   component: LoginPage,
+  // },
   {
     path: '(.*)',
     component: NotFoundPage,

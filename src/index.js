@@ -1,15 +1,15 @@
 // Import React and ReactDOM
 import React from 'react';
 import ReactDOM from 'react-dom';
-import store from './core/store';
-import * as serviceWorker from './serviceWorker';
-import { Provider } from 'react-redux';
 
 // Import Framework7
 import Framework7 from 'framework7/framework7.esm.bundle';
 
 // Import Framework7-React plugin
 import Framework7React from 'framework7-react';
+
+// Import Framework7-Redux plugin
+import { framework7ReduxPlugin } from 'framework7-redux';
 
 // Import main App component
 import App from './App.jsx';
@@ -26,19 +26,11 @@ import './css/app.css';
 // Init Framework7-React plugin
 Framework7.use(Framework7React);
 
-// Mount React App
-// ReactDOM.render(
-//   React.createElement(App),
-//   document.getElementById('app'),
-// );
+// Init Framework7-Redux plugin
+Framework7.use(framework7ReduxPlugin);
 
+// Mount React App
 ReactDOM.render(
-  (
-    <Provider store={store}>
-      <App />
-    </Provider>
-  ),
+  React.createElement(App),
   document.getElementById('app'),
 );
-
-serviceWorker.unregister();
