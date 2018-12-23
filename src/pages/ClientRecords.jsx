@@ -10,6 +10,7 @@ import {
   List,
   ListItem, 
 } from 'framework7-react';
+import moment from 'moment';
 import Preloader from '../components/Preloader';
 
 export default class ClientRecords extends React.Component {
@@ -22,17 +23,23 @@ export default class ClientRecords extends React.Component {
       clientRecords,
       isLoading,
       isLoadingComplete,
+      onOpenLeftPanel,
     } = this.props;
 
     return (
       <Page>
         <Navbar>
           <NavLeft>
-            <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left"></Link>
+            <Link
+              iconIos="f7:menu"
+              iconMd="material:menu"
+              panelOpen="left"
+              onClick={onOpenLeftPanel}
+            />
           </NavLeft>
           <NavTitle>Клиенты</NavTitle>
         </Navbar>
-        <BlockTitle>Прием клиентов на</BlockTitle>
+        <BlockTitle>Прием клиентов на {moment().format('DD.MM.YYYY')}</BlockTitle>
         {
           isLoading ? (
             <Preloader />

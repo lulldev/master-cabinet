@@ -17,11 +17,17 @@ import {
 
 export default class Clients extends React.Component {
   render() {
+    const { onOpenLeftPanel } = this.props;
     return (
       <Page>
         <Navbar>
           <NavLeft>
-            <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left"></Link>
+            <Link
+              iconIos="f7:menu"
+              iconMd="material:menu"
+              panelOpen="left"
+              onClick={onOpenLeftPanel}
+            />
           </NavLeft>
           <NavTitle>Прием клиента</NavTitle>
         </Navbar>
@@ -37,13 +43,13 @@ export default class Clients extends React.Component {
             <Icon slot="media" f7="document_text"></Icon>
           </ListItem>
         </List>
-        <BlockTitle>Услуги</BlockTitle>
+        <BlockTitle>Парикмахерские услуги</BlockTitle>
         <List accordionList>
           <ListItem accordionItem title="Услуга 1" smartSelect>
             <AccordionContent>
               <Block>
                 <List>
-                  <ListItem header="02. Стрижка женская (средние волосы)'), 750 руб.">
+                  <ListItem header="01. Стрижка женская (короткие волосы)'), 750 руб.">
                     <Stepper
                       min={0}
                       max={10}
@@ -76,27 +82,25 @@ export default class Clients extends React.Component {
             title="Расходники"
             smartSelect
           >
-            <select name="fruits" multiple>
-              <option value="apple">Apple</option>
-              <option value="pineapple">Pineapple</option>
-              <option value="pear">Pear</option>
+            <select name="consumables" multiple>
+              <option value="1">Шампунь, 20 г.</option>
+              <option value="2">Крем, 1 шт.</option>
             </select>
           </ListItem>
           <ListItem
             title="Комплименты"
             smartSelect
           >
-            <select name="fruits" multiple>
-              <option value="apple">Apple</option>
-              <option value="pineapple">Pineapple</option>
-              <option value="pear">Pear</option>
+            <select name="compliments" multiple>
+              <option value="1">ИК-сауна</option>
+              <option value="2">Солярий</option>
             </select>
           </ListItem>
           <ListItem accordionItem title="Рекомендуемые товары" smartSelect>
             <AccordionContent>
               <Block>
                 <List>
-                  <ListItem header="Товар 1, 750 руб.">
+                  <ListItem header="Крем для ухода рук, 750 руб.">
                     <Stepper
                       min={0}
                       max={10}
@@ -107,7 +111,7 @@ export default class Clients extends React.Component {
                       slot="after"
                     />
                   </ListItem>
-                  <ListItem header="Товар 2, 750 руб.">
+                  <ListItem header="Краска для волос, 1 шт., 150 руб.">
                     <Stepper
                       min={0}
                       max={10}
@@ -124,7 +128,12 @@ export default class Clients extends React.Component {
           </ListItem>     
         </List>
         <Block>
-          <Link href="/review/">Подтвердить</Link>
+          <Button
+            className="col"
+            fill
+          >
+            Подтвердить
+          </Button>
         </Block>
       </Page>
     );

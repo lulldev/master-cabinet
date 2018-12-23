@@ -2,11 +2,10 @@ import Home from './containers/HomeContainer';
 import LeftMenu from './containers/PanelLeftContainer';
 import Proceeds from './containers/Proceeds';
 import ClientRecords from './containers/ClientRecords';
+import ClientRecordOrder from './containers/ClientRecordOrder';
 
 import NotFoundPage from './pages/NotFoundPage';
 import NotifySettings from './pages/NotifySettings';
-import ClientOrder from './pages/ClientOrder';
-import ClientOrderReview from './pages/ClientOrderReview';
 
 export default [
   {
@@ -25,11 +24,7 @@ export default [
   },
   {
     path: '/order/',
-    component: ClientOrder,
-  },
-  {
-    path: '/review/',
-    component: ClientOrderReview,
+    component: ClientRecordOrder,
   },
   {
     path: '/proceeds/',

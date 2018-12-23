@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import moment from 'moment';
 import {
   Page,
   Navbar,
@@ -15,7 +16,7 @@ export default class Proceeds extends React.Component {
 
   componentWillMount() {
     const { loadProceeds } = this.props;
-    loadProceeds('2018-12-23');
+    loadProceeds(moment().format('YYYY-MM-DD'));
   }
 
   render() {
@@ -39,7 +40,7 @@ export default class Proceeds extends React.Component {
           </NavLeft>
           <NavTitle>Моя выручка</NavTitle>
         </Navbar>
-        <BlockTitle>Подсчет выручки на текущее число</BlockTitle>
+        <BlockTitle>Подсчет выручки на {moment().format('DD.MM.YYYY')}</BlockTitle>
         {
           isLoading ? (
             <Preloader />
