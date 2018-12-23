@@ -13,6 +13,7 @@ import thunk from 'redux-thunk';
 
 import loginReducer from './reducers/LoginReducer';
 import formReducer from './reducers/FormReducer';
+import proceedsReducer from './reducers/Proceeds';
 
 export const stateKernel = new Framework7StateKernel();
 
@@ -21,6 +22,7 @@ export const store = createStore(
     framework7: framework7Reducer,
     login: loginReducer,
     form: formReducer,
+    proceeds: proceedsReducer,
   }),
   composeWithDevTools(
     applyMiddleware(thunk),
