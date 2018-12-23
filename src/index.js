@@ -1,6 +1,7 @@
 // Import React and ReactDOM
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as serviceWorker from './serviceWorker';
 
 // Import Framework7
 import Framework7 from 'framework7/framework7.esm.bundle';
@@ -34,3 +35,5 @@ ReactDOM.render(
   React.createElement(App),
   document.getElementById('app'),
 );
+
+serviceWorker.unregister();

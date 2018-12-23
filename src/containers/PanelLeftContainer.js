@@ -1,12 +1,13 @@
 import { connect } from 'react-redux'
-
-import PanelLeft from '../components/modals/PanelLeft';
-import { closePanelLeft, goToAboutPageFromLeftPanel, goToFormPageFromLeftPanel } from '../actions/PanelLeftActions';
+import {
+  closePanelLeft,
+  goToFormPageFromLeftPanel,
+} from '../actions/PanelLeftActions';
+import PanelLeft from '../components/LeftMenu';
 
 const mapDispatchToProps = (dispatch) => {
   return {
     onClosePanelLeft: () => dispatch(closePanelLeft()),
-    onGoToAbout: () => dispatch(goToAboutPageFromLeftPanel()),
     onGoToForm: () => dispatch(goToFormPageFromLeftPanel()),
   };
 };

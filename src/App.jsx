@@ -15,16 +15,16 @@ const f7params = {
   // App Framework7 Redux state kernel
   stateKernel,
   // Disable F7 automated routing for Links
-  clicks: {
-    externalLinks: 'a[href="#"]'
-  },
+  // clicks: {
+  //   externalLinks: 'a[href="#"]'
+  // },
   // Disable F7 automated routing for backdrops    
-  panel: {
-    closeByBackdropClick: false
-  },
-  popup: {
-    closeByBackdropClick: false
-  }
+  // panel: {
+  //   closeByBackdropClick: true
+  // },
+  // popup: {
+  //   closeByBackdropClick: false
+  // }
 };
 
 export default () => {
