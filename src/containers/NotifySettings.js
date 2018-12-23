@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { openPanelLeft } from '../actions/PanelLeftActions';
-import HomePage from '../pages/HomePage';
+import NotifySettings from '../pages/NotifySettings';
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -8,4 +8,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default connect(null, mapDispatchToProps)(NotifySettings);

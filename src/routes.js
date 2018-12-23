@@ -3,9 +3,8 @@ import LeftMenu from './containers/PanelLeftContainer';
 import Proceeds from './containers/Proceeds';
 import ClientRecords from './containers/ClientRecords';
 import ClientRecordOrder from './containers/ClientRecordOrder';
-
+import NotifySettings from './containers/NotifySettings';
 import NotFoundPage from './pages/NotFoundPage';
-import NotifySettings from './pages/NotifySettings';
 
 export default [
   {
