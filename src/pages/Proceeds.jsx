@@ -12,7 +12,7 @@ import {
 import Preloader from '../components/Preloader';
 
 export default class Proceeds extends React.Component {
-  
+
   componentWillMount() {
     const { loadProceeds } = this.props;
     loadProceeds('2018-12-23');

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Provider } from 'react-redux'
 import { App, View, Statusbar } from 'framework7-react';
-
-import routes from './routes';
 import { store, stateKernel } from './store';
+import { AuthProvider } from 'react-check-auth';
+import routes from './routes';
 
 // Framework7 parameters here
 const f7params = {
@@ -15,13 +15,13 @@ const f7params = {
   // App Framework7 Redux state kernel
   stateKernel,
   // Disable F7 automated routing for Links
-  // clicks: {
-  //   externalLinks: 'a[href="#"]'
-  // },
+  clicks: {
+    externalLinks: 'a[href="#"]'
+  },
   // Disable F7 automated routing for backdrops    
-  // panel: {
-  //   closeByBackdropClick: true
-  // },
+  panel: {
+    closeByBackdropClick: true
+  },
   // popup: {
   //   closeByBackdropClick: false
   // }
@@ -29,11 +29,13 @@ const f7params = {
 
 export default () => {
   return (
-    <Provider store={store}>
-      <App params={f7params}>
-        <Statusbar />
-        <View id="main-view" url="/" main className="ios-edges"/>
-      </App>
-    </Provider>
+    <AuthProvider authUrl={'/index.php/api/auth_check'}>
+      <Provider store={store}>
+        <App params={f7params}>
+          <Statusbar />
+          <View id="main-view" url="/" main className="ios-edges"/>
+        </App>
+      </Provider>
+    </AuthProvider>
   );
 };

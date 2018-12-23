@@ -16,7 +16,7 @@ export default ({onClosePanelLeft}) => (
         <ListItem link="/clients/" title="Начать прием клиента" view="#main-view" panelClose />
         <ListItem link="/proceeds/" title="Моя выручка за день" view="#main-view" panelClose />
         <ListItem link="/notify-settings/" title="Настройка оповещений" view="#main-view" panelClose />
-        <ListItem link="/login/" title="Выход" panelClose />
+        <ListItem link="/index.php/api/auth_check" title="Выход" panelClose />
       </List>
     </Page>
   </Panel>
