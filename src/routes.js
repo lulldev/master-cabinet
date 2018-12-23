@@ -1,9 +1,10 @@
 import Home from './containers/HomeContainer';
 import LeftMenu from './containers/PanelLeftContainer';
 import Proceeds from './containers/Proceeds';
+import ClientRecords from './containers/ClientRecords';
+
 import NotFoundPage from './pages/NotFoundPage';
 import NotifySettings from './pages/NotifySettings';
-import Clients from './pages/Clients';
 import ClientOrder from './pages/ClientOrder';
 import ClientOrderReview from './pages/ClientOrderReview';
 
@@ -20,7 +21,7 @@ export default [
   },
   {
     path: '/clients/',
-    component: Clients,
+    component: ClientRecords,
   },
   {
     path: '/order/',
