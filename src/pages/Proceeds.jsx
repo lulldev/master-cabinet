@@ -11,11 +11,17 @@ import {
 
 export default class Proceeds extends React.Component {
   render() {
+    const { onOpenLeftPanel } = this.props;
     return (
       <Page>
         <Navbar>
           <NavLeft>
-            <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left"></Link>
+            <Link
+              iconIos="f7:menu"
+              iconMd="material:menu"
+              panelOpen="left"
+              onClick={onOpenLeftPanel}
+            />
           </NavLeft>
           <NavTitle>Моя выручка</NavTitle>
         </Navbar>

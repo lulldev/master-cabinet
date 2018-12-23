@@ -1,16 +1,16 @@
-import HomePage from './containers/HomeContainer';
+import Home from './containers/HomeContainer';
 import LeftMenu from './containers/PanelLeftContainer';
+import Proceeds from './containers/Proceeds';
 import NotFoundPage from './pages/NotFoundPage';
 import NotifySettings from './pages/NotifySettings';
 import Clients from './pages/Clients';
 import ClientOrder from './pages/ClientOrder';
 import ClientOrderReview from './pages/ClientOrderReview';
-import Proceeds from './pages/Proceeds';
 
 export default [
   {
     path: '/',
-    component: HomePage,
+    component: Home,
   },
   {
     path: '/panel-left/',
