@@ -2,8 +2,6 @@ import React from 'react';
 import {
   Page,
   Navbar,
-  Col,
-  Row,
   Icon,
   Block,
   List,

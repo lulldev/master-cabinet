@@ -1,0 +1,14 @@
+{
+  "name": "Личный кабинет",
+  "short_name": "Кабинет",
+  "lang": "ru-RU",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#211B15",
+  "icons": [
+    {
+      "src": "/"
+    }
+  ]
+}
