@@ -1,5 +1,14 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { Framework7StateKernel, framework7Reducer, syncFramework7WithStore } from 'framework7-redux';
+import {
+  createStore,
+  combineReducers,
+  applyMiddleware,
+} from 'redux';
+import {
+  Framework7StateKernel,
+  framework7Reducer,
+  syncFramework7WithStore,
+} from 'framework7-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import loginReducer from './reducers/LoginReducer';
@@ -13,7 +22,9 @@ export const store = createStore(
     login: loginReducer,
     form: formReducer,
   }),
-  applyMiddleware(thunk)
+  composeWithDevTools(
+    applyMiddleware(thunk),
+  )
 );
 
 syncFramework7WithStore(store, stateKernel);
