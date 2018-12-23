@@ -2,9 +2,8 @@ import React from 'react';
 import {
   Page,
   Navbar,
-  Link,
-  NavLeft,
-  NavTitle,
+  Col,
+  Row,
   Icon,
   Block,
   List,
@@ -17,20 +16,10 @@ import {
 
 export default class Clients extends React.Component {
   render() {
-    const { onOpenLeftPanel } = this.props;
+    const { onGoToClientRecords } = this.props;
     return (
       <Page>
-        <Navbar>
-          <NavLeft>
-            <Link
-              iconIos="f7:menu"
-              iconMd="material:menu"
-              panelOpen="left"
-              onClick={onOpenLeftPanel}
-            />
-          </NavLeft>
-          <NavTitle>Прием клиента</NavTitle>
-        </Navbar>
+        <Navbar title="Прием клиента"/>
         <BlockTitle>Клиент</BlockTitle>
         <List>
           <ListItem title="Иванов Иван Иванович">
@@ -128,12 +117,7 @@ export default class Clients extends React.Component {
           </ListItem>     
         </List>
         <Block>
-          <Button
-            className="col"
-            fill
-          >
-            Подтвердить
-          </Button>
+          <Button fill big onClick={() => window.location.href = '/'}>Подтвердить</Button>
         </Block>
       </Page>
     );

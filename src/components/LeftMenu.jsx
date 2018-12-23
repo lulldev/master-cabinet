@@ -7,16 +7,21 @@ import {
   ListItem,
 } from 'framework7-react';
 
-export default ({onClosePanelLeft}) => (
+export default ({
+  onClosePanelLeft,
+  onGoToClientRecords,
+  onGoToProceeds,
+  onGoToNotifySettings,
+}) => (
   <Panel left cover themeDark onPanelBackdropClick={onClosePanelLeft}>
     <Page>
       <Navbar title="Меню" />
       <List simple-list>
-        <ListItem link="/" title="На главную" view="#main-view" panelClose />
-        <ListItem link="/clients/" title="Начать прием клиента" view="#main-view" panelClose />
-        <ListItem link="/proceeds/" title="Моя выручка за день" view="#main-view" panelClose />
-        <ListItem link="/notify-settings/" title="Настройка оповещений" view="#main-view" panelClose />
-        <ListItem link="/index.php/api/auth_check" title="Выход" panelClose />
+        <ListItem link title="На главную" onClick={onGoToClientRecords} />
+        <ListItem link title="Начать прием клиента" onClick={onGoToClientRecords}/>
+        <ListItem link title="Моя выручка за день" onClick={onGoToProceeds} />
+        <ListItem link title="Настройка оповещений" onClick={onGoToNotifySettings} />
+        <ListItem title="Выход" />
       </List>
     </Page>
   </Panel>

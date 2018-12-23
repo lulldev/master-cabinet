@@ -11,19 +11,15 @@ import {
 } from 'framework7-react';
 import MasterProfile from '../components/MasterProfile';
 export default class HomePage extends React.Component {
+  onLogout() {
+    window.location.href = '/index.php/api/auth_check';
+  }
+
   render() {
-    const { onOpenLeftPanel } = this.props;
+    // const { onOpenLeftPanel } = this.props;
     return (
       <Page>
         <Navbar>
-          <NavLeft>
-            <Link
-              iconIos="f7:menu"
-              iconMd="material:menu"
-              panelOpen="left"
-              onClick={onOpenLeftPanel}
-            />
-          </NavLeft>
           <NavTitle>Личный кабинет</NavTitle>
         </Navbar>
         <MasterProfile />
@@ -32,6 +28,7 @@ export default class HomePage extends React.Component {
           <ListItem link="/clients/" title="Начать прием клиента" />
           <ListItem link="/proceeds/" title="Моя выручка за день" />
           <ListItem link="/notify-settings/" title="Настройка оповещений" />
+          <ListItem onClick={this.onLogout} title="Выход" />
         </List>
       </Page>
     );

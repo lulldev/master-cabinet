@@ -29,17 +29,7 @@ export default class Proceeds extends React.Component {
     } = this.props;
     return (
       <Page>
-        <Navbar>
-          <NavLeft>
-            <Link
-              iconIos="f7:menu"
-              iconMd="material:menu"
-              panelOpen="left"
-              onClick={onOpenLeftPanel}
-            />
-          </NavLeft>
-          <NavTitle>Моя выручка</NavTitle>
-        </Navbar>
+        <Navbar title="Выручка" backLink="Назад" backLinkUrl="/" />
         <BlockTitle>Подсчет выручки на {moment().format('DD.MM.YYYY')}</BlockTitle>
         {
           isLoading ? (

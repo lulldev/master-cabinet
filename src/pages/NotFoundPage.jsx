@@ -3,7 +3,7 @@ import { Page, Navbar, Block } from 'framework7-react';
 
 export default () => (
   <Page>
-    <Navbar title="404" backLink="Назад" />
+    <Navbar title="404" backLink="Назад" backLinkUrl="/" />
     <Block strong>
       <p>Страница не найдена</p>
     </Block>

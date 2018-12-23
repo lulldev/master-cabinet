@@ -7,24 +7,25 @@ import routes from './routes';
 
 // Framework7 parameters here
 const f7params = {
-  id: 'io.framework7.testapp', // App bundle ID
-  name: 'Framework7', // App name
+  id: 'est5.cabinet', // App bundle ID
+  name: 'master-cabinet', // App name
   theme: 'auto', // Automatic theme detection
   // App routes
   routes,
   // App Framework7 Redux state kernel
   stateKernel,
   // Disable F7 automated routing for Links
-  // clicks: {
-  //   externalLinks: 'a[href="#"]'
-  // },
+  clicks: {
+    // externalLinks: 'a[href="#"]'
+  },
   // Disable F7 automated routing for backdrops    
-  // panel: {
-  //   closeByBackdropClick: true
-  // },
-  // popup: {
-  //   closeByBackdropClick: false
-  // }
+  panel: {
+    closeByBackdropClick: false
+  },
+  popup: {
+    closeByBackdropClick: false
+  },
+  pushState: true,
 };
 
 export default () => {

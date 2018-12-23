@@ -23,22 +23,12 @@ export default class ClientRecords extends React.Component {
       clientRecords,
       isLoading,
       isLoadingComplete,
-      onOpenLeftPanel,
+      onGoToClientRecordOrder
     } = this.props;
 
     return (
       <Page>
-        <Navbar>
-          <NavLeft>
-            <Link
-              iconIos="f7:menu"
-              iconMd="material:menu"
-              panelOpen="left"
-              onClick={onOpenLeftPanel}
-            />
-          </NavLeft>
-          <NavTitle>Клиенты</NavTitle>
-        </Navbar>
+        <Navbar title="Клиенты" backLink="Назад" backLinkUrl="/" />
         <BlockTitle>Прием клиентов на {moment().format('DD.MM.YYYY')}</BlockTitle>
         {
           isLoading ? (
@@ -49,7 +39,8 @@ export default class ClientRecords extends React.Component {
                 {
                   clientRecords.map((record) => (
                     <ListItem
-                      link="/order/"
+                      link
+                      onClick={onGoToClientRecordOrder}
                       title={record.fullname}
                       subtitle={`${record.record_time} - ${record.service.title}`}
                       text={`${record.service.price} руб. Длительность не указана`}

@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
-import { openPanelLeft } from '../actions/PanelLeftActions';
+import { goBack } from 'framework7-redux';
+import { openPanelLeft, goToClientRecordOrder } from '../actions/PanelLeftActions';
 import { loadClientRecords } from '../actions/ClientRecords';
 import { 
   getClientRecords,
@@ -20,6 +21,8 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onOpenLeftPanel: () => dispatch(openPanelLeft()),
     loadClientRecords: () => dispatch(loadClientRecords()),
+    onGoBack: () => goBack(),
+    onGoToClientRecordOrder: () => dispatch(goToClientRecordOrder()),
   };
 };
 
