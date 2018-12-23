@@ -115,7 +115,7 @@ export default class Clients extends React.Component {
           </ListItem>     
         </List>
         <Block>
-          <Button fill big onClick={() => window.location.href = '/'}>Подтвердить</Button>
+          <Button fill big onClick={() => window.location.href = '/pwa'}>Подтвердить</Button>
         </Block>
       </Page>
     );

@@ -2,7 +2,7 @@
   "name": "Личный кабинет",
   "short_name": "Кабинет",
   "lang": "ru-RU",
-  "start_url": "/",
+  "start_url": "http://test.cabinet.est5.ru/pwa/",
   "display": "fullscreen",
   "orientation": "portrait",
   "theme_color": "#211B15",
